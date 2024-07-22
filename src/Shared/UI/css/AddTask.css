@@ -1,5 +1,6 @@
 .standard-input {
-    background-color: #181a1a;
+    /* background-color: #181a1a; */
+    background-color: rgb(255, 255, 255, 0.1);
     color: rgb(247, 226, 223);
     max-width: 500px;
     border-top-left-radius: 30px;
@@ -11,104 +12,10 @@
     margin-inline: 4px;
     border-radius: 20px;
     width: 100%;
-    height: 50px;
+    height: 2em;
 }
 
-.icon-btn {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #cdcdcd;
-    background: white;
-    border-radius: 25px;
-    overflow: hidden;
-    position: relative;
-    transition: width 0.2s ease-in-out;
-    font-weight: 500;
-    font-family: inherit;
-}
 
-.add-btn:hover {
-    width: 120px;
-}
-
-.add-btn::before,
-.add-btn::after {
-    transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 10px;
-    top: calc(50% - 2px);
-    background: seagreen;
-}
-
-.add-btn::after {
-    right: 14px;
-    overflow: hidden;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-}
-
-.add-btn::before {
-    left: 14px;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-}
-
-.icon-btn:focus {
-    outline: none;
-}
-
-.btn-txt {
-    opacity: 0;
-    transition: opacity 0.2s;
-}
-
-.add-btn:hover::before,
-.add-btn:hover::after {
-    width: 4px;
-    border-radius: 2px;
-}
-
-.add-btn:hover .btn-txt {
-    opacity: 1;
-}
-
-.add-icon::after,
-.add-icon::before {
-    transition: all 0.2s ease-in-out;
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 2px;
-    top: calc(50% - 10px);
-    background: seagreen;
-    overflow: hidden;
-}
-
-.add-icon::before {
-    left: 22px;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-}
-
-.add-icon::after {
-    right: 22px;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-}
-
-.add-btn:hover .add-icon::before {
-    left: 15px;
-    height: 4px;
-    top: calc(50% - 2px);
-}
-
-.add-btn:hover .add-icon::after {
-    right: 15px;
-    height: 4px;
-    top: calc(50% - 2px);
-}
 
 .task-container {
     margin: 1rem;
@@ -118,7 +25,7 @@
     padding: 0.25em 0.5em;
     border-radius: 30px;
     transition: background-color 200ms ease-in-out;
-    background-color: rgb(26, 27, 27);
+    /* background-color: rgb(26, 27, 27); */
 }
 
 .task-container .task-content {

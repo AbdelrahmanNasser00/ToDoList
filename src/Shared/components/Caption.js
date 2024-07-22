@@ -1,6 +1,5 @@
 import React from "react";
 import "../../App.css";
-import AddSharpIcon from "@mui/icons-material/AddSharp";
 const Caption = () => {
   const h1Style = {
     color: "white",
