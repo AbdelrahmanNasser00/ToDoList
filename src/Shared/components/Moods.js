@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-
+import DarkModeIcon from "@mui/icons-material/DarkMode";
+import LightModeIcon from "@mui/icons-material/LightMode";
+import { IconButton } from "@mui/material";
 const Mood = styled.div`
   background-color: ${({ color }) => color};
   border-radius: 50%;
@@ -20,11 +22,38 @@ const MoodsContainer = styled.div`
 `;
 
 const Moods = () => {
+  const [dark, setDark] = useState(true);
+  const handleMood = () => {
+    setDark(!dark);
+  };
   return (
     <MoodsContainer>
-      <Mood color="red" />
-      <Mood color="blue" />
-      <Mood color="white" />
+      {dark ? (
+        <IconButton
+          sx={{
+            color: "white",
+            width: "38px",
+            height: "38px",
+            borderRadius: "50%",
+            marginInline: "5px",
+          }}
+          onClick={handleMood}>
+          <DarkModeIcon />
+        </IconButton>
+      ) : (
+        <IconButton
+          sx={{
+            color: "white",
+            width: "38px",
+            height: "38px",
+            borderRadius: "50%",
+            marginInline: "5px",
+          }}
+          onClick={handleMood}>
+          {" "}
+          <LightModeIcon />
+        </IconButton>
+      )}
     </MoodsContainer>
   );
 };
